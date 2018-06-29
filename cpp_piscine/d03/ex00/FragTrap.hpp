@@ -1,11 +1,22 @@
 #ifndef FRAGTRAP_H
 #define FRAGTRAP_H
-#include <iostream>
 
+#include <iostream>
+#define VAULTENERGYCOST 25
+#define ATTACKS_SZ 5
+static const std::string attacks[ATTACKS_SZ] = {
+    "spit",
+    "electric shock",
+    "fireball",
+    "freeze",
+    "shave"
+};
 
 class FragTrap {
 
     public:
+
+        FragTrap ( void );
 
         FragTrap ( std::string name );
 
@@ -23,14 +34,14 @@ class FragTrap {
 
     private:
 
-        unsigned hitpoints;
-        unsigned maxhitpoints;
-        unsigned energypoints;
+        std::string name;
+        unsigned hp;
+        unsigned maxhp;
+        unsigned ep;
         unsigned level;
         unsigned meleedamage;
         unsigned rangeddamage;
         unsigned armordamage;
-        std::string name;
 };
 
 #endif
