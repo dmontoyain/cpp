@@ -11,7 +11,7 @@ class   ClapTrap {
         ClapTrap ( void );
         ~ClapTrap ( void );
 
-        ClapTrap(ClapTrap const& rhs);
+        ClapTrap( ClapTrap const& rhs );
         ClapTrap& operator=( ClapTrap const& rhs );
 
         //getters
@@ -19,7 +19,7 @@ class   ClapTrap {
         unsigned    getHp( void );
         unsigned    getMaxHp( void );
         unsigned    getEp( void );
-        unsigned    getmaxEp( void );
+        unsigned    getMaxEp( void );
         unsigned    getLevel( void );
         unsigned    getMeleeDamage( void );
         unsigned    getRangeDamage( void );

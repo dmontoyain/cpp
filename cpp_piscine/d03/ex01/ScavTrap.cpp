@@ -1,11 +1,11 @@
 #include "ScavTrap.hpp"
 
-ScavTrap::ScavTrap(void) : name("noname"), hp(100), maxhp(100), ep(100), level(1), meleedamage(20), rangeddamage(15), armordamage(3)
+ScavTrap::ScavTrap(void) : name("noname"), hp(100), maxhp(100), ep(100), maxep(100), level(1), meleedamage(20), rangeddamage(15), armordamage(3)
 {
     std::cout << "SC4V-TP <" << name << "> constructed" << std::endl;
 }
 
-ScavTrap::ScavTrap(std::string name) : name(name), hp(100), maxhp(100), ep(100), level(1), meleedamage(20), rangeddamage(15), armordamage(3)
+ScavTrap::ScavTrap(std::string name) : name(name), hp(100), maxhp(100), ep(100), maxep(100), level(1), meleedamage(20), rangeddamage(15), armordamage(3)
 {
     std::cout << "SC4V-TP <" << name << "> constructed" << std::endl;
 }
@@ -24,6 +24,7 @@ ScavTrap& ScavTrap::operator=(ScavTrap const& rhs) {
     hp = rhs.hp;
     maxhp = rhs.maxhp;
     ep = rhs.ep;
+    maxep = rhs.ep;
     level = rhs.level;
     meleedamage = rhs.meleedamage;
     rangeddamage = rhs.rangeddamage;

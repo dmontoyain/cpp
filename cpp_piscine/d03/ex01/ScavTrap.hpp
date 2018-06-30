@@ -33,6 +33,7 @@ class ScavTrap {
         unsigned    hp;
         unsigned    maxhp;
         unsigned    ep;
+        unsigned    maxep;
         unsigned    level;
         unsigned    meleedamage;
         unsigned    rangeddamage;

@@ -38,6 +38,7 @@ class FragTrap {
         unsigned    hp;
         unsigned    maxhp;
         unsigned    ep;
+        unsigned    maxep;
         unsigned    level;
         unsigned    meleedamage;
         unsigned    rangeddamage;

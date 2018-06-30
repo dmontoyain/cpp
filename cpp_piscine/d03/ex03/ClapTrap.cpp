@@ -24,7 +24,7 @@ unsigned    ClapTrap::getEp() {
     return _ep;
 }
 
-unsigned    ClapTrap::getmaxEp() {
+unsigned    ClapTrap::getMaxEp() {
     return _maxep;
 }
 

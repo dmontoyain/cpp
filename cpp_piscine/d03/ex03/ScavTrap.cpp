@@ -19,7 +19,6 @@ ScavTrap::ScavTrap(std::string name) {
     _hp = 100;
     _maxhp = 100;
     _ep = 100;
-    _maxep = 100;
     _level = 1;
     _meleedamage = 20;
     _rangeddamage = 15;
@@ -42,7 +41,6 @@ ScavTrap& ScavTrap::operator=(ScavTrap const& rhs) {
     _hp = rhs._hp;
     _maxhp = rhs._maxhp;
     _ep = rhs._ep;
-    _maxep = rhs._maxep;
     _level = rhs._level;
     _meleedamage = rhs._meleedamage;
     _rangeddamage = rhs._rangeddamage;

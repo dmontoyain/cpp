@@ -1,12 +1,12 @@
 #include "FragTrap.hpp"
 
-FragTrap::FragTrap ( void ) : name("no_Name"), hp(100), maxhp(100), ep(100), level(1), meleedamage(30), rangeddamage(20), armordamage(5)
+FragTrap::FragTrap ( void ) : name("no_Name"), hp(100), maxhp(100), ep(100), maxep(100), level(1), meleedamage(30), rangeddamage(20), armordamage(5)
 {
     srand(time(0));
     std::cout << name + " FR4G-TP constructed" << std::endl;
 }
 
-FragTrap::FragTrap ( std::string name ) : name(name), hp(100), maxhp(100), ep(100), level(1), meleedamage(30), rangeddamage(20), armordamage(5)
+FragTrap::FragTrap ( std::string name ) : name(name), hp(100), maxhp(100), ep(100), maxep(100), level(1), meleedamage(30), rangeddamage(20), armordamage(5)
 {
     srand(time(0));
     std::cout << name + " FR4G-TP constructed" << std::endl;
@@ -29,6 +29,7 @@ FragTrap & FragTrap::operator=( FragTrap const& rhs )
     hp = rhs.hp;
     maxhp = rhs.maxhp;
     ep = rhs.ep;
+    maxep = rhs.maxep;
     level = rhs.level;
     meleedamage = rhs.meleedamage;
     rangeddamage = rhs.rangeddamage;
@@ -98,5 +99,5 @@ void FragTrap::vaulthunter_dot_exe ( std::string const & target )
         std::cout << "FR4G-TP <" << name << "> performs <" << attacks[rand() % ATTACKS_SZ] << "> on <" << target << ">" << std::endl;
     }
 
-    std::cout << "FR4G-TP <" << name << "> has <" << ep << "/ 100" << "> energy left" << std::endl;
+    std::cout << "FR4G-TP <" << name << "> has <" << ep << "/ " << maxep << "> energy left" << std::endl;
 }
