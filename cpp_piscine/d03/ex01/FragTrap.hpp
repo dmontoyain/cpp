@@ -35,14 +35,13 @@ class FragTrap {
     private:
 
         std::string name;
-        unsigned    hp;
-        unsigned    maxhp;
-        unsigned    ep;
-        unsigned    level;
-        unsigned    meleedamage;
-        unsigned    rangeddamage;
-        unsigned    armordamage;
-
+        unsigned hp;
+        unsigned maxhp;
+        unsigned ep;
+        unsigned level;
+        unsigned meleedamage;
+        unsigned rangeddamage;
+        unsigned armordamage;
 };
 
 #endif
