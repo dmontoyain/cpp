@@ -1,9 +1,6 @@
 #include "Bureaucrat.hpp"
 #include "Form.hpp"
 
-#include "Form.hpp"
-#include "Bureaucrat.hpp"
-
 static void checkForm(Bureaucrat bureaucrat, Form format)
 {
     try
