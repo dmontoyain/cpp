@@ -1,5 +1,5 @@
-NAME = "00"
-FILES =	Bureaucrat \
+NAME = "01"
+FILES =	Bureaucrat	Form\
 		main
 
 CC = g++
